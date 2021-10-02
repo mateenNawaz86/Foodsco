@@ -6,6 +6,7 @@ import HomeSection from "./components/Home/HomeSection";
 
 import Navbar from "./components/Navbar/Navbar";
 import ProductSection from "./components/Products/ProductSection";
+import ReviewSection from "./components/Review/ReviewSection";
 
 const App = () => {
   return (
@@ -18,10 +19,12 @@ const App = () => {
           <Features />
           <ProductSection />
           <Categories />
+          <ReviewSection />
         </Route>
         <Route to="/features" component={Features} />
         <Route to="/products" component={ProductSection} />
         <Route to="/categories" component={Categories} />
+        <Route to="/review" component={ReviewSection} />
       </Switch>
     </Router>
   );

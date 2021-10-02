@@ -6,6 +6,13 @@
   margin-bottom: 2rem;
 }
 
+.products .product-slider .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+
 .products .product-slider .box {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -43,8 +50,3 @@
   padding: 0.5rem 0;
 }
 
-.products .product-slider .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
-}

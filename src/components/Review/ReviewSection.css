@@ -1,0 +1,56 @@
+.review .review-slider {
+  padding: 1rem;
+}
+
+.review .review-slider .box {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.review .review-slider .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+
+.review .review-slider .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .review-slider .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.review .review-slider .box p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: var(--light-gray);
+  line-height: 1.8;
+}
+
+.review .review-slider .box .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.review .review-slider .box .status h3 {
+  font-size: 2.1rem;
+  color: var(--green);
+}
+
+.review .review-slider .box .status i {
+    color: var(--orange);
+    font-size: 1.5rem;
+}
