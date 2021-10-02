@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Categories from "./components/Categories/Categories";
 import Features from "./components/Features/Features";
 import HomeSection from "./components/Home/HomeSection";
 
@@ -16,9 +17,11 @@ const App = () => {
           <HomeSection />
           <Features />
           <ProductSection />
+          <Categories />
         </Route>
         <Route to="/features" component={Features} />
         <Route to="/products" component={ProductSection} />
+        <Route to="/categories" component={Categories} />
       </Switch>
     </Router>
   );
