@@ -6,6 +6,7 @@
   --red: #da3b3b;
   --green-hover: #075e07;
   --black: #130f40;
+  --blue: #191970;
   --light-gray: #666;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.26);
   --border: 2px solid rgba(0, 0, 0, 0.12);
@@ -56,6 +57,19 @@ body {
 
 section {
   padding: 2rem 9%;
+}
+
+.simpleBtn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: var(--blue);
+}
+
+.simpleBtn:hover {
+  color: var(--orange);
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {

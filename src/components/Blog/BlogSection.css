@@ -1,0 +1,62 @@
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogs .box-container .box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogs .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--border);
+}
+
+.blogs .box-container .box .content .icons .blog-status {
+  font-size: 1.5rem;
+  color: var(--light-gray);
+}
+
+.blogs .box-container .box .content .icons i {
+  color: var(--orange);
+  font-size: 1.4rem;
+  margin-right: 4px;
+}
+
+.blogs .box-container .box .content h3 {
+  font-size: 1.6rem;
+  color: var(--orange);
+  letter-spacing: 0.5px;
+  margin:5px 0;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.4rem;
+  color: var(--light-gray);
+  text-align: left;
+  line-height: 1.7;
+  margin-bottom: 13px;
+}
