@@ -7,10 +7,12 @@ const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const searchBarHandler = () => setShowSearch(!showSearch);
   const cartHandler = () => setShowCart(!showCart);
   const loginHandler = () => setShowLogin(!showLogin);
+  const menuHandler = () => setShowMenu(!showMenu);
 
   const cartData = [
     {
@@ -43,29 +45,29 @@ const Navbar = () => {
         Green Store
       </Link>
 
-      <nav className="navbar">
-        <Link className="nav-links" to="/home">
+      <nav className={showMenu ? "navbar active" : "navbar"}>
+        <Link className="nav-links" to="/home" id="home">
           Home
         </Link>
-        <Link className="nav-links" to="/features">
+        <Link className="nav-links" to="/features" id="features">
           Features
         </Link>
-        <Link className="nav-links" to="/products">
+        <Link className="nav-links" to="/products" id="products">
           Froducts
         </Link>
-        <Link className="nav-links" to="/categories">
+        <Link className="nav-links" to="/categories" id="categories">
           Categories
         </Link>
-        <Link className="nav-links" to="/review">
+        <Link className="nav-links" to="/review" id="review">
           Review
         </Link>
-        <Link className="nav-links" to="/blogs">
+        <Link className="nav-links" to="/blogs" id="blogs">
           Blogs
         </Link>
       </nav>
 
       <div className="icons">
-        <div className="fas fa-bars" id="menu-btn"></div>
+        <div onClick={menuHandler} className="fas fa-bars" id="menu-btn"></div>
         <div
           onClick={searchBarHandler}
           className="fas fa-search"

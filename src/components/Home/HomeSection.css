@@ -1,0 +1,44 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  background-image: url(./banner-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  width: 60rem;
+}
+
+.home .content h3 {
+  color: var(--black);
+  font-size: 3rem;
+  user-select: none;
+}
+
+.home .content span {
+  color: var(--orange);
+}
+
+.home .content p {
+  color: var(--light-gray);
+  font-size: 1.5rem;
+  user-select: none;
+  padding: 10px 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 450px) {
+  .home .content h3 {
+    font-size: 2rem;
+  }
+
+  .home .content p {
+    font-size: 1.4rem;
+  }
+}
