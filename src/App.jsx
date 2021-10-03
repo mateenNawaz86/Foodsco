@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BlogSection from "./components/Blog/BlogSection";
 import Categories from "./components/Categories/Categories";
 import Features from "./components/Features/Features";
+import Footer from "./components/Footer/Footer";
 import HomeSection from "./components/Home/HomeSection";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -22,6 +23,7 @@ const App = () => {
           <Categories />
           <ReviewSection />
           <BlogSection />
+          <Footer />
         </Route>
         <Route to="/features" component={Features} />
         <Route to="/products" component={ProductSection} />
