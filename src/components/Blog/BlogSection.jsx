@@ -18,7 +18,7 @@ const BlogSection = () => {
     {
       imgSrc: "../image/blog-3.jpg",
       blogDate: "1st Jun, 2021",
-      blogTitle: "Delicus Dairy Fruits",
+      blogTitle: "Delicus Dry Fruits",
     },
   ];
   return (

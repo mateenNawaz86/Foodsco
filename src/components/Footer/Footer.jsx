@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./Footer.css";
+
 const Footer = () => {
   return (
     <>
@@ -15,16 +17,16 @@ const Footer = () => {
               Temporibus dolorum in cum.
             </p>
             <div className="share">
-              <Link to="/">
+              <Link to="/" className="share-links">
                 <i className="fab fa-facebook-f" />
               </Link>
-              <Link to="/">
+              <Link to="/" className="share-links">
                 <i className="fab fa-twitter" />
               </Link>
-              <Link to="/">
+              <Link to="/" className="share-links">
                 <i className="fab fa-instagram" />
               </Link>
-              <Link to="/">
+              <Link to="/" className="share-links">
                 <i className="fab fa-linkedin" />
               </Link>
             </div>
@@ -39,6 +41,9 @@ const Footer = () => {
               <i className="fas fa-phone" /> 042 321 45671
             </Link>
             <Link to="/" className="links">
+              <i className="fas fa-envelope" /> info@gmail.com
+            </Link>
+            <Link to="/" className="links">
               <i className="fas fa-map-marker-alt" /> Islamabad, Pakistan -
               210021
             </Link>
@@ -49,30 +54,38 @@ const Footer = () => {
             <Link to="/" className="links">
               <i className="fas fa-arrow-right" /> Home
             </Link>
-            <Link to="/" className="links">
+            <Link to="/features" className="links">
               <i className="fas fa-arrow-right" /> features
             </Link>
-            <Link to="/" className="links">
+            <Link to="/products" className="links">
               <i className="fas fa-arrow-right" /> Products
             </Link>
-            <Link to="/" className="links">
+            <Link to="/categories" className="links">
               <i className="fas fa-arrow-right" /> Categories
             </Link>
-            <Link to="/" className="links">
+            <Link to="/review" className="links">
               <i className="fas fa-arrow-right" /> Review
             </Link>
-            <Link to="/" className="links">
+            <Link to="/blogs" className="links">
               <i className="fas fa-arrow-right" /> Blogs
             </Link>
           </div>
 
           <div className="box">
-            <h3>News Letter</h3>
+            <h3>Contact Us</h3>
             <p>Get in touch</p>
             <input type="email" placeholder="your email" className="email" />
             <input type="submit" className="btn" value="contact" />
-            <img src="../image/payment.png" alt="payment" className='payment-img'/>
+            <img
+              src="../image/payment.png"
+              alt="payment"
+              className="payment-img"
+            />
           </div>
+        </div>
+
+        <div className="credit">
+          Created by <span>Mr. Mateen </span> | all rights reserved.
         </div>
       </section>
     </>

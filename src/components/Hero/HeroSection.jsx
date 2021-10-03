@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import './HomeSection.css';
+import "./HeroSection.css";
 
-const HomeSection = () => {
+const HeroSection = () => {
   return (
     <>
       <section className="home" id="home">
@@ -16,11 +16,13 @@ const HomeSection = () => {
             nulla nesciunt deserunt esse mollitia optio.
           </p>
 
-          <Link to="/" className='btn'>Shop Now</Link>
+          <Link to="/" className="btn">
+            Shop Now
+          </Link>
         </div>
       </section>
     </>
   );
 };
 
-export default HomeSection;
+export default HeroSection;

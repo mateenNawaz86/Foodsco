@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Navbar.css";
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [showSearch, setShowSearch] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
@@ -41,27 +43,54 @@ const Navbar = () => {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        <i className="fas fa-shopping-basket" />
-        Green Store
+        <i className="fas fa-shopping-basket" />Foodsco
       </Link>
 
       <nav className={showMenu ? "navbar active" : "navbar"}>
-        <Link className="nav-links" to="/home" id="home">
+        <Link
+          className={`nav-links ${location.pathname === "/" ? "active" : ""}`}
+          to="/"
+        >
           Home
         </Link>
-        <Link className="nav-links" to="/features" id="features">
+        <Link
+          className={`nav-links ${
+            location.pathname === "/features" ? "active" : ""
+          }`}
+          to="/features"
+        >
           Features
         </Link>
-        <Link className="nav-links" to="/products" id="products">
-          Froducts
+        <Link
+          className={`nav-links ${
+            location.pathname === "/products" ? "active" : ""
+          }`}
+          to="/products"
+        >
+          Products
         </Link>
-        <Link className="nav-links" to="/categories" id="categories">
+        <Link
+          className={`nav-links ${
+            location.pathname === "/categories" ? "active" : ""
+          }`}
+          to="/categories"
+        >
           Categories
         </Link>
-        <Link className="nav-links" to="/review" id="review">
+        <Link
+          className={`nav-links ${
+            location.pathname === "/review" ? "active" : ""
+          }`}
+          to="/review"
+        >
           Review
         </Link>
-        <Link className="nav-links" to="/blogs" id="blogs">
+        <Link
+          className={`nav-links ${
+            location.pathname === "/blogs" ? "active" : ""
+          }`}
+          to="/blogs"
+        >
           Blogs
         </Link>
       </nav>

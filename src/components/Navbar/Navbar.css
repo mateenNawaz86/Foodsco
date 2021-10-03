@@ -36,6 +36,10 @@
   letter-spacing: 0.3px;
 }
 
+.header .navbar .nav-links.active {
+  color: var(--orange);
+}
+
 .header .navbar .nav-links:hover {
   color: var(--orange);
 }
